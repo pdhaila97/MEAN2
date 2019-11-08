@@ -1,0 +1,34 @@
+#updateBtn{
+    margin:1px;
+}
+
+#deleteBtn{
+    margin:1px;
+}
+
+#prevPage{
+    position: fixed;
+    bottom: 13%;
+    right: 10%;
+}
+
+#nextPage{
+    position: fixed;
+    bottom: 13%;
+    right: 6%;
+}
+
+.resultsDisplay{
+    position: fixed;
+    bottom: 17%;
+    right: 5%;
+}
+
+accordion-group {
+    margin-top: 16px;
+    width: 82%;
+}
+
+accordion {
+    margin-top: 60px;
+}

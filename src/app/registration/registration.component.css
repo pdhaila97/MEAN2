@@ -1,0 +1,21 @@
+input {
+    position: relative;
+    display: block;
+    left: 35%;
+    width: 30%;
+    height: 35px;
+    margin-top: 2%;
+}
+[type="submit"] {
+    height: 35px;
+}
+
+[type="textarea"] {
+    height: 100px;
+}
+
+#addAddressBtn {
+    position: absolute;
+    right: 30%;
+    top: 285px;
+}

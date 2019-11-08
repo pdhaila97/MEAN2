@@ -1,0 +1,18 @@
+.header h3{
+    display: inline-block;
+    position: relative;
+    margin: 22px 5px;
+}
+
+h3 a {
+    color: black;
+}
+
+body{
+    position: fixed;
+    top: 0%;
+    width: 100vw;
+    height: 8vh;
+    left: 0;
+    background-color: #286090;
+}

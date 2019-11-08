@@ -1,0 +1,14 @@
+<body>
+<h1>Add/Edit</h1>
+    <div class="form-group">
+        <input type="text" class="form-control" [value]="inputVals.name" placeholder="Name" #nameInput (keyup.enter)='validateInputs()'>
+        <input type="text" class="form-control" [value]="inputVals.email" placeholder="Email" #emailInput (keyup.enter)='validateInputs()'> 
+        <div #addressInputs>
+            <input type="textarea" class="form-control" [value]="inputVals.address[0]" placeholder="Primary Address" #currAddressInput (keyup.enter)='validateInputs()'>
+        </div>
+        <button id="addAddressBtn" (click)="addAddressField()" class = "btn btn-primary">+</button>
+        <input type="text" class="form-control" [value]="inputVals.phone" placeholder="Phone Number" #phoneInput (keyup.enter)='validateInputs()'> 
+        <input type="submit" class = "btn btn-primary" placeholder="Submit" (click)='validateInputs()'>
+    </div>
+<p *ngIf='regInvalid' id="errRegInvalidInp">Invalid inputs, Please enter all fields.</p>
+</body>

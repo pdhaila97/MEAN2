@@ -1,0 +1,15 @@
+body{
+    position: fixed;
+    bottom: 0px;
+    width: 100vw;
+    height: 8vh;
+    left: 0%;
+    background-color:#286090;
+}
+
+body > p {
+    position: absolute;
+    right: 10px;
+    margin-top: 25px;
+    color: black;
+}

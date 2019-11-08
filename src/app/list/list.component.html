@@ -1,0 +1,20 @@
+<div class="list">
+    <ul>
+        <accordion>
+        <li *ngFor="let member of members">
+            <accordion-group [heading] = "member.name">
+                ID : {{member._id}}<br> Email : {{member.email}}<br>Addresses: 
+                <div *ngFor="let address of member.address; let i = index">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Address {{i+1}}: {{address}}<br></div>
+                Phone Number: {{member.phone}}<br>
+                <button class = "btn btn-primary" id="updateBtn" (click)='populateInputs(member)'>Update</button>
+                <button class = "btn btn-primary" id="deleteBtn" (click)='delete(member)'>Delete</button>
+            </accordion-group>
+        </li>
+    </accordion>
+    </ul>
+</div>
+<div>
+    <button class = "btn btn-primary" id="prevPage" (click)='prevPage()'>&lt;&lt;</button>
+    <button class = "btn btn-primary" id="nextPage" (click)='nextPage()'>&gt;&gt;</button>
+    <span class="resultsDisplay">Showing results {{firstElementOnPage}} - {{lastElementOnPage}}</span>
+</div>
